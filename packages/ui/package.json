@@ -1,7 +1,11 @@
 {
   "name": "skyboxx",
   "description": "A flexible file upload drag and drop component for multiple cloud providers",
-  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dendianugerah/skyboxx.git"
+  },
+  "version": "0.0.3",
   "sideEffects": false,
   "license": "MIT",
   "main": "./dist/index.js",
