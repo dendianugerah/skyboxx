@@ -1,13 +1,17 @@
 {
-  "name": "@acme/ui",
-  "version": "0.0.0",
+  "name": "skyboxx",
+  "description": "A flexible file upload drag and drop component for multiple cloud providers",
+  "version": "0.0.1",
   "sideEffects": false,
   "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "./button": {
-      "types": "./src/button.tsx",
-      "import": "./dist/button.mjs",
-      "require": "./dist/button.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
     }
   },
   "scripts": {
@@ -26,7 +30,18 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "@aws-sdk/client-s3": "^3.670.0",
+    "@aws-sdk/lib-storage": "^3.670.0",
+    "@google-cloud/storage": "^7.13.0",
+    "@supabase/supabase-js": "^2.45.4",
+    "@radix-ui/react-progress": "^1.0.3",
+    "@radix-ui/react-slot": "^1.1.0",
+    "react-dropzone": "^14.2.9",
+    "lucide-react": "^0.452.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.0.0",
+    "class-variance-authority": "^0.7.0"
   },
   "publishConfig": {
     "access": "public"
